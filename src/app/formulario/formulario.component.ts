@@ -16,9 +16,14 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
   // tslint:disable-next-line:typedef
   onSubmit(form: NgForm) {
-    this.servicePoline.getPoline(form.value)
+    console.log(form.value);
+    this.servicePoline.getPoline(form.value).subscribe(res => {
+      // @ts-ignore
+      this.resultado = res.valor;
+    });
     // this.resultado = "NO";
   }
 
