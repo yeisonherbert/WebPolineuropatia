@@ -1,28 +1,42 @@
 
   <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
     <div class="contenedor">
-      <mat-form-field appearance="fill"><mat-label>Edad</mat-label><input name="Edad" #Edad="ngModel" [(ngModel)]="servicePoline.formData.Edad" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Genero</mat-label><input name="Genero" #Genero="ngModel" [(ngModel)]="servicePoline.formData.Genero" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>flgCovid</mat-label><input name="flgCovid" #flgCovid="ngModel" [(ngModel)]="servicePoline.formData.flgCovid" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>UCI</mat-label><input name="UCI" #UCI="ngModel" [(ngModel)]="servicePoline.formData.UCI" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>flgDiabetes</mat-label><input name="flgDiabetes" #flgDiabetes="ngModel" [(ngModel)]="servicePoline.formData.flgDiabetes" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>TipoExtremidad</mat-label><input name="TipoExtremidad" #TipoExtremidad="ngModel" [(ngModel)]="servicePoline.formData.TipoExtremidad" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Latencia_1_der</mat-label><input name="Latencia_1_der" #Latencia_1_der="ngModel" [(ngModel)]="servicePoline.formData.Latencia_1_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amplitud_1_der</mat-label><input name="Amplitud_1_der" #Amplitud_1_der="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_1_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Latencia_2_der</mat-label><input name="Latencia_2_der" #Latencia_2_der="ngModel" [(ngModel)]="servicePoline.formData.Latencia_2_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amplitud_2_der</mat-label><input name="Amplitud_2_der" #Amplitud_2_der="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_2_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Latencia_1_izq</mat-label><input name="Latencia_1_izq" #Latencia_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Latencia_1_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amplitud_1_izq</mat-label><input name="Amplitud_1_izq" #Amplitud_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_1_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Latencia_2_izq</mat-label><input name="Latencia_2_izq" #Latencia_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Latencia_2_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amplitud_2_izq</mat-label><input name="Amplitud_2_izq" #Amplitud_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_2_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_1_der</mat-label><input name="Amp_Needle_1_der" #Amp_Needle_1_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_1_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_2_der</mat-label><input name="Amp_Needle_2_der" #Amp_Needle_2_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_2_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_3_der</mat-label><input name="Amp_Needle_3_der" #Amp_Needle_3_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_3_der" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_1_izq</mat-label><input name="Amp_Needle_1_izq" #Amp_Needle_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_1_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_2_izq</mat-label><input name="Amp_Needle_2_izq" #Amp_Needle_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_2_izq" matInput></mat-form-field>
-      <mat-form-field appearance="fill"><mat-label>Amp_Needle_3_izq</mat-label><input name="Amp_Needle_3_izq" #Amp_Needle_3_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_3_izq" matInput></mat-form-field>
+      <mat-grid-list cols="4" rowHeight="3:1">
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Edad</mat-label><input name="Edad" #Edad="ngModel" [(ngModel)]="servicePoline.formData.Edad" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field appearance="fill">
+            <mat-label>Genero</mat-label>
+            <input name="Genero" #Genero="ngModel" [(ngModel)]="servicePoline.formData.Genero" matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>flgCovid</mat-label><input name="flgCovid" #flgCovid="ngModel" [(ngModel)]="servicePoline.formData.flgCovid" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>UCI</mat-label><input name="UCI" #UCI="ngModel" [(ngModel)]="servicePoline.formData.UCI" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>flgDiabetes</mat-label><input name="flgDiabetes" #flgDiabetes="ngModel" [(ngModel)]="servicePoline.formData.flgDiabetes" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>TipoExtremidad</mat-label><input name="TipoExtremidad" #TipoExtremidad="ngModel" [(ngModel)]="servicePoline.formData.TipoExtremidad" matInput></mat-form-field></mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="4" rowHeight="3:1">
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Latencia_1_der</mat-label><input name="Latencia_1_der" #Latencia_1_der="ngModel" [(ngModel)]="servicePoline.formData.Latencia_1_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amplitud_1_der</mat-label><input name="Amplitud_1_der" #Amplitud_1_der="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_1_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Latencia_2_der</mat-label><input name="Latencia_2_der" #Latencia_2_der="ngModel" [(ngModel)]="servicePoline.formData.Latencia_2_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amplitud_2_der</mat-label><input name="Amplitud_2_der" #Amplitud_2_der="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_2_der" matInput></mat-form-field></mat-grid-tile>
+
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Latencia_1_izq</mat-label><input name="Latencia_1_izq" #Latencia_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Latencia_1_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amplitud_1_izq</mat-label><input name="Amplitud_1_izq" #Amplitud_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_1_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Latencia_2_izq</mat-label><input name="Latencia_2_izq" #Latencia_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Latencia_2_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amplitud_2_izq</mat-label><input name="Amplitud_2_izq" #Amplitud_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Amplitud_2_izq" matInput></mat-form-field></mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="4" rowHeight="3:1">
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_1_der</mat-label><input name="Amp_Needle_1_der" #Amp_Needle_1_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_1_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_2_der</mat-label><input name="Amp_Needle_2_der" #Amp_Needle_2_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_2_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_3_der</mat-label><input name="Amp_Needle_3_der" #Amp_Needle_3_der="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_3_der" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_1_izq</mat-label><input name="Amp_Needle_1_izq" #Amp_Needle_1_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_1_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_2_izq</mat-label><input name="Amp_Needle_2_izq" #Amp_Needle_2_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_2_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile><mat-form-field appearance="fill"><mat-label>Amp_Needle_3_izq</mat-label><input name="Amp_Needle_3_izq" #Amp_Needle_3_izq="ngModel" [(ngModel)]="servicePoline.formData.Amp_Needle_3_izq" matInput></mat-form-field></mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+      </mat-grid-list>
     <button mat-raised-button color="primary" type="submit">Procesar</button>
-    <p>El resultado de la polineuropatía es:{{resultado}}</p>
+    <p>El resultado de la polineuropatía es: <span> {{resultado}}</span></p>
     </div>
   </form>
 

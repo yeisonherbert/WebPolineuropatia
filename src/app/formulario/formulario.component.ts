@@ -18,6 +18,8 @@ export class FormularioComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
+  tipoOperaciones = [];
+
   onSubmit(form: NgForm) {
     console.log(form.value);
     this.servicePoline.getPoline(form.value).subscribe(res => {

@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;
+background-image: url("assets/image/body-nerves.jpg");
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-form-field-appearance-fill .mat-form-field-infix
+{
+  /*background: rgba(255,255,255,0.8);*/
+}
+.mat-form-field-flex{
+  background: rgba(255,255,255,0.95) !important;
+}

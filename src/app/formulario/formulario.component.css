@@ -2,5 +2,17 @@
   display: flex;
   flex-direction: column;
   margin:1rem auto;
-  max-width: 600px;
+  max-width: 1000px;
+  padding: 1em;
+  background: rgba(255,255,255,0.7);
+}
+
+p{
+  color: #673ab7;
+  font-size: 16pt;
+  margin-top: 12pt;
+}
+p span
+{
+  font-weight: bold;
 }

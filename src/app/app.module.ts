@@ -11,6 +11,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from '@angular/common/http';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -22,11 +24,14 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
     MatToolbarModule,
     FormsModule,
     MatButtonModule,
+    MatGridListModule,
+    MatFormFieldModule
 
   ],
   providers: [],
